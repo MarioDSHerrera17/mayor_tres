@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html long="en">
+<head>
+	<meta charset="utf-8">
+	<title>Mayor de tres numeros</title>
+	<script type="text/javascript">
+		function Mayor_3()
+	{
+		var num1 = parseFloat(document.getElementById('num1').value);
+		var num2 = parseFloat(document.getElementById('num2').value);
+		var num3 = parseFloat(document.getElementById('num3').value);
+		if (!num1 || !num2 || !num3) 
+		{
+			alert("Ingresa un valor");
+		}
+		else
+		{
+			if (num1>num2 && num1>num3) 
+			{
+				alert("Este es el numero mayor: "+ num1);
+			}	
+			if (num2>num1 && num2>num3) 
+			{
+				alert("Este es el numero mayor: "+ num2);
+			}
+			if (num3>num2 && num3>num1) 
+			{
+				alert("Este es el numero mayor: "+ num3);
+			}
+			if (num1==num2 && num1==num3) 
+			{
+				alert("Son iguales");
+			}
+			if (num1==num2 & num1>num3) 
+			{
+				alert("Este es el mayor:"+ num1 );
+			}	
+			if (num1==num3 & num1>num2) 
+			{
+				alert("Este es el mayor:"+ num2 );
+			}
+			if (num2==num3 & num3>num1) 
+			{
+				alert("Este es el mayor:"+ num3 );
+			}
+			if (num1==num2 & num1<num3) 
+			{
+				alert("Este es el mayor:"+ num3 );
+			}	
+			if (num1==num3 & num1<num2) 
+			{
+				alert("Este es el mayor:"+ num2 );
+			}
+			if (num2==num3 & num3<num1) 
+			{
+				alert("Este es el mayor:"+ num2 );
+			}
+		}
+	}
+	</script>
+</head>
+<body background="https://previews.123rf.com/images/kseniavasil/kseniavasil1508/kseniavasil150800092/43829951-sin-patr%C3%B3n-de-signos-para-la-suma-resta-multiplicaci%C3%B3n-signo-de-interrogaci%C3%B3n-marca-de-verificaci%C3%B3n-ilustraci%C3%B3n-vec.jpg">
+		<p><font face="times new roman" size="+1" color="blue">Mayor de 3 numeros</font></p>
+		<font color="#000000">
+		Ingresa un primer número: <input type="text" style="width:68px;height:23px;background-color:#0404B4;color:#FFFFFF;font-size:13pt; font-family:Verdana;text-align:center;" name="num1" id="num1" >
+		<p></p>
+		Ingresa un segundo número: <input type="text" style="width:68px;height:23px;background-color:#0404B4;color:#FFFFFF;font-size:13pt; font-family:Verdana;text-align:center;" name="num2" id="num2" >
+		<p></p>
+		Ingresa un tecer número: <input type="text" style="width:68px;height:23px;background-color:#0404B4;color:#FFFFFF;font-size:13pt; font-family:Verdana;text-align:center;" name="num3" id="num3" >
+		</font>
+		<p></p>
+    <input type="button" style="width:100px;height:36px;background-color:#FFFFFF;color:#0404B4;font-size:13pt; font-family:Verdana;text-align:center;"  name="btn1" value="Verificar" onclick="Mayor_3()"></td>
+
+</body>
+</html>		
